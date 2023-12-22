@@ -1,9 +1,9 @@
-name: Run Playwright script every Friday at 9pm
+name: Run Playwright script every Friday at 9:30pm
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
   schedule:
-    - cron: '0 22 * * 5'
+    - cron: '0 21 * * 5'
 
 jobs:
   run-playwright:
