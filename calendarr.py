@@ -372,7 +372,6 @@ def run(playwright: Playwright) -> None:
                         with open(f'error file_{tag}.txt','w',encoding='UTF-8') as file:
                             file.write(f'Tag {tag} is not available')
         except Exception as e:
-            print('Errorr is .......:', e)
             print(f'No data available for {state}')
             with open(f'data not available for {state}.txt','w',encoding='UTF-8') as file:
                 file.write('No data')
@@ -382,5 +381,3 @@ def run(playwright: Playwright) -> None:
 
 with sync_playwright() as playwright:
         run(playwright)
-
-    
