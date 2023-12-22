@@ -1,5 +1,4 @@
-
-name: Update calendar every Friday at 10pm
+name: Run Playwright script every Friday at 9pm
 
 on:
   workflow_dispatch
